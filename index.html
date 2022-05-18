@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="quiz2.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+   
+  </head>
+  <body class="container">
+    <h1>
+        Shoes Api
+    </h1>
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text"
+        class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="Title of shoes">
+      <small id="titlehelp" class="form-text text-muted">Enter title of the shoes </small>
+    </div>
+    
+    <div class="form-group">
+      <label for="description">description</label>
+      <input type="text"
+        class="form-control" name="description" id="description" aria-describedby="helpId" placeholder="Shoes Deatails">
+      <small id="helpId" class="form-text text-muted">Enter shoes details</small>
+    </div>
+    
+    <button id="addBtn" class="btn btn-info"> Add Shoes</button>
+        <div id="shoes">
+            
+        </div>
+       
+        <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Update Modal</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <input type="hidden" id="updateId"> <br>
+                <input type="text" id="updateTitle"> <br>
+                <input type="text" id="updateBody">
+    
+    
+              </div>
+              <div class="modal-footer">
+                <button id="updateSave"class="btn btn-primary">update</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+  </body>
+</html>
